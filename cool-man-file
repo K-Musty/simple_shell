@@ -1,0 +1,388 @@
+x T ps
+x res 72000 1 1
+x init
+p1
+x font 5 TR
+f5
+s10000
+V48000
+H72000
+md
+DFd
+tCOOL(SIMPLE)
+h103040
+tcool
+wh2500
+t-
+wh2500
+tsimple_shell
+wh2500
+t-
+wh2500
+tman
+wh2500
+tpage
+h103040
+tCOOL(SIMPLE)
+n12000 0
+V84000
+H72000
+tB.
+n12000 0
+V112800
+H72000
+x X devtag:.NH 1
+x font 38 TB
+f38
+s10950
+V112800
+H72000
+tN
+H79687
+tAME
+wh2738
+x X devtag:.eo.h
+V112800
+H107972
+n12000 0
+f5
+s10000
+V124800
+H108000
+tsimple_shell
+wh2500
+C\-
+wh8140
+tsimple
+wh2500
+tUNIX
+wh2500
+tcommand
+wh2500
+tinterpreter
+wh2500
+tmade
+wh2500
+tin
+wh2500
+tC
+n12000 0
+V153600
+H72000
+x X devtag:.NH 1
+f38
+s10950
+V153600
+H72000
+tSYNOPSIS
+wh2738
+x X devtag:.eo.h
+V153600
+H128283
+n12000 0
+f5
+s10000
+V165600
+H108000
+t$
+wh2500
+t/hsh
+wh2500
+t[options]
+wh2500
+t[
+Cfi
+h5560
+tle]
+n12000 0
+V194400
+H72000
+x X devtag:.NH 1
+f38
+s10950
+V194400
+H72000
+tDESCRIPTION
+wh2738
+x X devtag:.eo.h
+V194400
+H150787
+n12000 0
+f5
+s10000
+V206400
+H108000
+tThis
+wh3376
+tSimple
+wh3376
+tShell
+wh3376
+t(cool)
+wh3376
+timitates
+wh3376
+tthe
+wh3376
+tactual
+wh3376
+tshell
+wh3376
+twhich
+wh3376
+tis
+wh3376
+ta
+wh3376
+tprogram
+wh3376
+tthat
+wh3376
+ttak
+H425658
+tes
+wh3376
+tcommands
+wh3376
+tfrom
+wh3375
+tthe
+wh3375
+tk
+H527380
+te
+H531670
+ty
+Chy
+h3330
+n12000 0
+V218400
+H108000
+tboard
+wh2500
+tand
+wh2500
+tgi
+H157740
+tv
+H162590
+tes
+wh2500
+tthem
+wh2500
+tto
+wh2500
+tthe
+wh2500
+tOperating
+wh2500
+tSystem
+wh2500
+t(OS)
+wh2500
+tfor
+wh2500
+te
+H335750
+tx
+H340600
+tecution
+n12000 0
+V247200
+H72000
+x X devtag:.NH 1
+f38
+s10950
+V247200
+H72000
+tP
+H77880
+tA
+H84746
+tTH
+wh2738
+x X devtag:.eo.h
+V247200
+H103307
+n12000 0
+f5
+s10000
+V259200
+H108000
+te
+H112290
+txit
+wh2687
+t-
+wh2687
+tExit
+wh2688
+tshell
+wh2688
+ten
+H181530
+tv
+wh2688
+t-
+wh2688
+tPrint
+wh2688
+ta
+wh2688
+tlist
+wh2688
+tof
+wh2688
+ten
+H259478
+tvironment
+wh2688
+tv
+H308026
+tariables
+wh2688
+tseten
+H361964
+tv
+wh2688
+t-
+wh2688
+tSet
+wh2688
+ta
+wh2688
+tne
+H407456
+tw
+wh2688
+ten
+H426404
+tvironment
+wh2688
+tv
+H474952
+tariable
+wh2688
+tunseten
+H535000
+tv
+n12000 0
+V271200
+H108000
+t-
+wh2500
+tUnsets
+wh2500
+tan
+wh2500
+ten
+H164530
+tvironment
+wh2500
+tv
+H212890
+tariable
+wh2500
+tcd
+wh2500
+t-
+wh2500
+tChanges
+wh2500
+tdirectories
+n12000 0
+V300000
+H72000
+x X devtag:.NH 1
+f38
+s10950
+V300000
+H72000
+tEXAMPLES
+wh2738
+x X devtag:.eo.h
+V300000
+H135577
+n12000 0
+f5
+s10000
+V312000
+H108000
+t$
+wh2500
+tls
+wh2500
+t-l
+n12000 0
+V336000
+H108000
+tcd
+wh2500
+t-
+n12000 0
+V360000
+H108000
+ten
+H117040
+tv
+n12000 0
+V384000
+H108000
+tls
+wh2500
+t-l
+n12000 0
+V408000
+H108000
+te
+H112290
+txit
+wh2500
+t98
+n12000 0
+V448800
+H72000
+x X devtag:.NH 1
+f38
+s10950
+V448800
+H72000
+tA
+H79358
+tUTHORS
+wh2738
+x X devtag:.eo.h
+V448800
+H128338
+n12000 0
+f5
+s10000
+V460800
+H108000
+tAbdulrahman
+wh2500
+tKalli
+wh2500
+tMustapha
+wh2500
+t&
+wh2500
+tMuhamed
+wh2500
+tAdam
+n12000 0
+V768000
+H72000
+t3rd
+wh2500
+tDECEMBER,
+wh2500
+t2023
+h123165
+tSHELL
+h213445
+t1
+n12000 0
+x trailer
+V792000
+x stop

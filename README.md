@@ -3,7 +3,7 @@
 ------------------------
 ## Description
 
-This Projects mimics a shell program that takes certain commands from the keyboard to the operating system(OS) for execution
+This Projects mimics a shell program that takes certain commands from the keyboard to the operating system(OS) for execution. This project encompases from concepts ranging from prompting to parsing to lots more.
 
 ------------------------
 #### Compilations

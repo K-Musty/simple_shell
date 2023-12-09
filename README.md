@@ -3,7 +3,7 @@
 ------------------------
 ## Description
 
-This Projects mimics a shell program that takes certain commands from the keyboard to the operating system(OS) for execution
+This Projects mimics a shell program that takes certain commands from the keyboard to the operating system(OS) for execution. This project encompases from concepts ranging from prompting to parsing to lots more.
 
 ------------------------
 #### Compilations
@@ -11,9 +11,12 @@ This Projects mimics a shell program that takes certain commands from the keyboa
 - All files would be compiled using: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 #### Files
-README.md - description about the project repo
-cool-man-file - 
-AUTHORS - file at the root of your repository, listing all individuals having contributed content to the repository.
+
+README.md - Description about the project repository
+
+cool-man-file - Contains details aabout the cool simple shell
+
+AUTHORS - File at the root of your repository, listing all individuals having contributed content to the repository.
 
 -----------------------
 ### Authors &copy;

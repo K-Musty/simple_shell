@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef _SHELL_H
 #define _SHELL_H
 
@@ -62,3 +63,31 @@ char *str_conc(char *string, char *strr, unsigned int num);
 char *strcoin(char *adam, char *kalli);
 void cool_print_env(char **enviroment)
 #endif
+=======
+#ifndef SHELL_H
+#define SHELL_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <limits.h>
+#include <stdbool.h>
+
+#define MAX_ARGUMENTS 50
+/**
+ * cool_command - command struct reciever
+ *@command_name: command name pointer
+ *@cool_arg: argument poointer
+ */
+typedef struct {
+    char *command_name;
+    char *cool_arg[MAX_ARGUMENTS];
+    // Add more fields for redirection info, flags, etc. if needed
+} cool_command;
+
+
+
+
+#endif 
+>>>>>>> 1c4d736fbd004bc8a4673b3c4388e3dd9a8b7677

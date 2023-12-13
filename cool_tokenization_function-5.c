@@ -29,6 +29,7 @@ cool_instruction *cool_get_term(char *entry)
 void cool_token(char *dry, cool_instruction *cool_node, size_t srt, char *keyy)
 {
 	cool_node->instruction[srt] = strdupl(keyy);
+
 	if (!cool_node->instruction[srt])
 		cool_error_handl(dry, 76);
 }

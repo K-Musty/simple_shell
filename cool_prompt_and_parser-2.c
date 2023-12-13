@@ -11,8 +11,8 @@
 cool_instruction **cool_prompt(char *entry, char *cool_arg)
 {
 	cool_instruction *cool_node = NULL;
-	ssize_t buffer = 0;
-	size_t *charact = 0;
+	size_t buffer = 0;
+	ssize_t charact = 0;
 	char *term = NULL;
 	cool_instruction **cool_term = &cool_node;
 
@@ -22,7 +22,7 @@ cool_instruction **cool_prompt(char *entry, char *cool_arg)
 	}
 	else
 	{
-		cool_arg = term;
+		term = cool_arg;
 	}
 	fflush(stdin);
 
@@ -30,7 +30,7 @@ cool_instruction **cool_prompt(char *entry, char *cool_arg)
 		cool_term = NULL;
 	else
 	{
-		*cmd_term = cool_space_parser(entry, terminal);
+		*cool_term = cool_space_parser(entry, term);
 		free(term);
 		term = NULL;
 		return (cool_term);
@@ -45,7 +45,7 @@ cool_instruction **cool_prompt(char *entry, char *cool_arg)
  *
  * Return: Null
  */
-cool_instructions *cool_space_parser(char *term, char *entry)
+cool_instruction *cool_space_parser(char *term, char *entry)
 {
 	const char *cool_argv = " \n";
 	char *cool_string = NULL;
@@ -56,10 +56,11 @@ cool_instructions *cool_space_parser(char *term, char *entry)
 	if (cool_string)
 	{
 		cool_node = cool_get_term(entry);
-		cool_token(entry, k, cool_string, cool_node);
-		for (k = 0; cool_string != NULL; k++)
+		cool_token(entry, cool_node, k, cool_string);
+		while (cool_string != NULL)
 		{
-			cool_string = strtok(k == 0) ? cool_string : NULL, cool_argv
+			cool_string == NULL ? k : k++;
+			cool_string = strtok(NULL,cool_argv);
 			if (cool_string)
 				cool_token(entry, cool_node, k, cool_string);
 		}
@@ -104,18 +105,18 @@ int cool_execute(char *instruction, char **instruct, char **env)
 
 
 /**
- * cool_detail - details of given file
+ * detail_ - details of given file
  * @entry: entry point
  * @instruct: the instruction
  *
  * Return: 1 or 0
  */
-int cool_detail(char *entry, char *instruct)
+int detail_stat(char *entry, char *instruct)
 {
-	struct details det;
+	struct stat det;
 
-	if (details(instruct, &det) == 0)
+	if (stat(instruct, &det) == 0)
 		return (1);
-	cool_error_handl(entry, COOL_ERROR);
+	cool_error_handl(entry, 73);
 	return (0);
 }

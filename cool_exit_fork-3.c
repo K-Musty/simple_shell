@@ -11,7 +11,6 @@
  */
 int cool_fork(char *entry, cool_instruction *cool_node, char *_pth, char **env)
 {
-	char cool_path = _pth;
 	pid_t cool, cool_pid_child;
 	char *instruction;
 
@@ -21,7 +20,7 @@ int cool_fork(char *entry, cool_instruction *cool_node, char *_pth, char **env)
 	}
 	else
 	{
-		instruction = _which(cool_path, cool_node->instruction[0]);
+		instruction = cool_find(_pth, cool_node->instruction[0]);
 	}
 	cool_pid_child = fork();
 	if (cool_pid_child == -1)
@@ -31,7 +30,7 @@ int cool_fork(char *entry, cool_instruction *cool_node, char *_pth, char **env)
 	}
 	if (cool_pid_child == 0)
 	{
-		if (cool_detail(entry, instruction))
+		if (detail_stat(entry, instruction))
 		{
 			cool_execute(instruction, cool_node->instruction, env);
 		}

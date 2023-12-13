@@ -60,7 +60,7 @@ cool_instruction *cool_space_parser(char *term, char *entry)
 		while (cool_string != NULL)
 		{
 			cool_string == NULL ? k : k++;
-			cool_string = strtok(NULL,cool_argv);
+			cool_string = strtok(NULL, cool_argv);
 			if (cool_string)
 				cool_token(entry, cool_node, k, cool_string);
 		}
@@ -105,7 +105,7 @@ int cool_execute(char *instruction, char **instruct, char **env)
 
 
 /**
- * detail_ - details of given file
+ * detail_stat- details of given file
  * @entry: entry point
  * @instruct: the instruction
  *

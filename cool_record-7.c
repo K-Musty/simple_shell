@@ -3,6 +3,7 @@
 /**
  * *cool_node_add - Add nessary node
  * @string: he string
+ * @tip: pointer
  *
  * Return: On success 1
  */
@@ -10,6 +11,7 @@ int cool_node_add(record_ **tip, char *string)
 {
 	record_ *wani = malloc(sizeof(tip));
 	record_ *sabo = malloc(sizeof(tip));
+
 	if (!sabo)
 	{
 		cool_free_list(*tip);

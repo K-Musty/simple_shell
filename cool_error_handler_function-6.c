@@ -8,28 +8,29 @@ void cool_error_handl(char *entry, int cool_message)
 {
 	char *cool_error = NULL;
 
-	switch (cool_message){
+	switch (cool_message)
+	{
 		case 70:
-			cool_error ="Error unknown\n";
+			cool_error = "Error unknown\n";
 			break;
 		case 71:
 			cool_error = "Error from Prompt - Zero tokens\n";
 			break;
 		case 72:
-		       cool_error = "No such file or directory\n";
-		       break;
+			cool_error = "No such file or directory\n";
+			break;
 		case 74:
-		       cool_error = "FATAL ERROR: UNABLE TO CREATE CHILD PROCESS\n";
-		       break;
+			cool_error = "FATAL ERROR: UNABLE TO CREATE CHILD PROCESS\n";
+			break;
 		case 75:
-		       cool_error = "command not found\n";
-		       break;
+			cool_error = "command not found\n";
+			break;
 		case 73:
-		       cool_error = "FATAL ERROR: NO MEMORY AVAILABLE\n";
-		       break;
+			cool_error = "FATAL ERROR: NO MEMORY AVAILABLE\n";
+			break;
 		case 76:
-		       cool_error = "FATAL ERROR: UNABLE TO CREATE CMD LIST\n";
-		       break;
+			cool_error = "FATAL ERROR: UNABLE TO CREATE CMD LIST\n";
+			break;
 	}
 
 	write(STDERR_FILENO, entry, strlength(entry));

@@ -123,7 +123,7 @@ char *strcoin(char *adam, char *kalli)
 {
 	int k = 0,  l;
 	int cnt = 0;
-	int kalli_bulk= 0;
+	int kalli_bulk = 0;
 	int place;
 
 	while (*(kalli + kalli_bulk))

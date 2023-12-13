@@ -1,7 +1,7 @@
 #include "shell.h"
 #include <stdbool.h>
 /**
- * cool_main - cool simple Shell
+ * main - cool simple Shell
  * @argc: Argument count
  * @argv: Argument variables or content
  * @env: evironment variables value

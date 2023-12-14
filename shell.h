@@ -49,6 +49,8 @@ typedef struct cool_error
 	char *output;/*character pointer*/
 } cool_error_;
 
+char *cool_strtok(char *str, const char *delim, char **save_ptr);
+
 int main(int argc, char **argv, char **env);
 cool_instruction **cool_prompt(char *entry, char *cool_arg);
 cool_instruction *cool_space_parser(char *term, char *entry);

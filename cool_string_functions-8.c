@@ -112,6 +112,7 @@ char *str_conc(char *string, char *strr, unsigned int num)
 	ptr[k] = '\0';
 	return (ptr);
 }
+
 /**
  * *strcoin - coincidation of numbers
  * @adam: pointer char
